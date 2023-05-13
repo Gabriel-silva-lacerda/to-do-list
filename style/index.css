@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #8758ff;
+    padding: 0px 20px;
+}
+
+.container {
+    margin-top: 100px;
+    background-color: #1A1A40;
+    max-height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #7c51fa;
+    border-radius: 3px;
+}
+
+.title-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-top: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title-container img {
+    max-width: 70px;
+    width: 100%;
+}
+
+.input-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.add-text {
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    border-radius: 9px;
+    outline: none;
+    width: 100%;
+}
+
+.add-text:focus {
+    border: 2px solid #7c51fa;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #8758ff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.container-input p {
+    color: red;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    display: none;
+}
+
+.ola {
+    color: white;
+}
+li {
+    margin-top: 20px;
+    list-style: none;
+    color: #ffffff;
+    background-color: #8758ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-color{
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #ffffff;
+}
+
+.error {
+   border: 2px solid red;
+}
+
+.error::placeholder {
+    color: red;
+}
+
+.check-task {
+    text-decoration: line-through;
+}
+
+.remove {
+    font-size: 5px;
+}
+
+.color-check  {
+    background-color: #8CFFDA;
+}
+
+.check {
+    display: none;
+}
+
+.display {
+    display: none;
+}
